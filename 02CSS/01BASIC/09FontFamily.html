@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* GOOGLE FONT CSS */
+        .dynapuff-<uniquifier> {
+            font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        /* font 등록 */
+        @font-face {
+            font-family: 'custom-01';
+            src: url("./font/나눔손글씨\아빠글씨.ttf");
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'OkMallangW';
+             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2603-1@1.0/OkMallangW-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+            }
+        body {
+            font-family: OkMallangW;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="font-family: 'Times New Roman', Times, serif;">HELLO WORLD</div>
+    <div>HELLO WORLD</div>
+    <div class=".dynapuff-<uniquifier>">HELLO WORLD</div>
+    <div style="font-family: 'custom-01';">HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 수업시간에 개인적으로 연습해서 만들은것 */
+        }
+
+        input[tbody="checkbox"] {
+            border: 2px solid;
+            width: 180px;
+            height: 200px;
+            background-color: bisque;
+            display: none;
+        }
+
+        input[type="checkbox"]+label {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border: 5px solid red;
+            cursor: pointer;
+        }
+
+        .chk-block {
+            display: flex;
+            align-items gap: 6px;
+        }
+
+        input[type="checkbox"]:checked+label {
+            background-color: cornflowerblue;
+            background-image: url(https://imgnn.seoul.co.kr/img/upload/2024/08/06/SSC_20240806100040.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chk-block">
+        <input type="checkbox" id="chk">
+        <label for="chk"></label>
+        <span>체크박스</span>
+    </div>
+</body>
+
+</html>
