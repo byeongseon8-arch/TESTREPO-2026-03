@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0;}
+        .parent{
+            /* width: 1440px; */
+            width: 100%;
+            height: 950px;
+            border: 1px solid;
+            margin: 0 auto;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .parent>.son{
+            border: 1px solid;
+        }
+        .parent>.son:nth-child(1){
+            width: 100px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px;
+            align-self: stretch;
+        }
+        .parent>.son:nth-child(2){
+            flex-grow: 1;
+            flex-shrink: 01;
+            flex-basis: 200px;
+            align-self: flex-start;
+        }
+        .parent>.son:nth-child(3){
+            flex-grow: 1;
+            flex-shrink: 01;
+            flex-basis: 200px;
+            align-self: flex-end;
+        }
+        .parent>.son:nth-child(4){
+            flex-grow: 1;
+            flex-shrink: 01;
+            flex-basis: 200px;
+        }
+        .parent>.son:nth-child(5){
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- .parent>child*5{$} -->
+        <div class="parent">
+            <child class="">1</child>
+            <child class="">2</child>
+            <child class="">3</child>
+            <child class="">4</child>
+            <child class="">5</child>
+        </div>
+
+
+
+</body>
+</html>
