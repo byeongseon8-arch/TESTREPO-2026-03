@@ -127,14 +127,20 @@ public class C01WHILE {
 //		}
 		
 		
-		// 구구단 N단 받아서 찍어보기
+		// 구구단 N단 받아서 찍어보기(n>=2 && n<=9) vs(n<2 || n>9)
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int i=1;
+		
+		while(n<2 || n>9) {
+			System.out.print("2이상 9이하 값 입력해야 합니다. : ");
+			n=sc.nextInt();
+		}
+		
+		int i=9;
 		int dan = n;
-		while(i<10) {
+		while(i>0) {
 			System.out.printf("%d x %d = %d\n", dan,i, dan*i);
-			i++;
+			i--;
 		}
 	}
 
