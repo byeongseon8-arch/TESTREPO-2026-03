@@ -1,6 +1,8 @@
+package Ch06;
+
 import java.util.Scanner;
 
-public class dkgk {
+public class C00PRACTICE {
 
 	public static void main(String[] args) {
 		
