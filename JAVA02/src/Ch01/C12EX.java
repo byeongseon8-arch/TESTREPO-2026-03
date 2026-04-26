@@ -111,6 +111,3 @@ public class C12EX {
 	}
 
 }
-
-
-

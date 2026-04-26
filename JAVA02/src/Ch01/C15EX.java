@@ -30,10 +30,79 @@ package Ch01;
 //
 //기능	: 발권하기(관객의 돈) : 티켓개수
 //		  issue(int money) : int
+
+class Audience{
+	int myMoney;
+	int ticketCnt;
+	
+	
+	public Audience(int myMoney, int ticketCnt) {
+		super();
+		this.myMoney = myMoney;
+		this.ticketCnt = ticketCnt;
+	}
+	
+	public void reserve(TicketSeller seller, int money) {
+		int recivedtiketCnt = TicketSeller.reserve(money);
+		myMoney -= money;
+		this.ticketCnt += recivedtiketCnt;
+	}
+
+	
+	// 오ㅓ버라이드
+	@Override
+	public String toString() {
+		return "Audience [myMoney=" + myMoney + ", ticketCnt=" + ticketCnt + "]";
+	}
+	
+}
+
+class TicketSeller{
+	int myMoney;
+	int ticketCnt;
+	int price;
+	
+	public TicketSeller(int myMoney, int ticketCnt, int price) {
+		super();
+		this.myMoney = myMoney;
+		this.ticketCnt = ticketCnt;
+		this.price = price;
+	}
+	
+	public int issue(int money) {
+		this.myMoney+=money;
+		int calticketCnt = ticketCnt;
+		ticketCnt -=calticketCnt;
+		return calticketCnt;
+	}
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return "TicketSeller [myMoney=" + myMoney + ", ticketCnt=" + ticketCnt + ", price=" + price + "]";
+	}
+	
+	
+	
+	
+	
+}
+	 
+
+
 public class C15EX {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Audience 관객 = new Audience(100000,0);
+		
+		TicketSeller 매표원 = new TicketSeller(100000, 3000, 10000);
+		
+		관객.issue(매표원, 50000);
+		
+		System.out.println(관객);
+		System.out.println(매표원);
 
 	}
 
