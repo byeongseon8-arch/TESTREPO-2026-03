@@ -49,7 +49,7 @@ class Audience{
 	}
 
 	
-	// 오ㅓ버라이드
+	// 오버라이드
 	@Override
 	public String toString() {
 		return "Audience [myMoney=" + myMoney + ", ticketCnt=" + ticketCnt + "]";
