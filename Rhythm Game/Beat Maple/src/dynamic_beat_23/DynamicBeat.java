@@ -21,29 +21,29 @@ public class DynamicBeat extends JFrame {
 	private Image ScreenImage;
 	private Graphics ScreenGraphic;
 
-	private Image Background = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
+	private Image Background = new ImageIcon(Main.class.getResource("images/introBackground.jpg")).getImage();
 
-	private ImageIcon exitButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/exitButtonEntered.png"));
-	private ImageIcon exitButtonBasicImage = new ImageIcon(Main.class.getResource("/images/exitButtonBasic.png"));
-	private ImageIcon startButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/startButtonEntered.png"));
-	private ImageIcon startButtonBasicImage = new ImageIcon(Main.class.getResource("/images/startButtonBasic.png"));
-	private ImageIcon quitButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/quitButtonEntered.png"));
-	private ImageIcon quitButtonBasicImage = new ImageIcon(Main.class.getResource("/images/quitButtonBasic.png"));
+	private ImageIcon exitButtonEnteredImage = new ImageIcon(Main.class.getResource("images/exitButtonEntered.png"));
+	private ImageIcon exitButtonBasicImage = new ImageIcon(Main.class.getResource("images/exitButtonBasic.png"));
+	private ImageIcon startButtonEnteredImage = new ImageIcon(Main.class.getResource("images/startButtonEntered.png"));
+	private ImageIcon startButtonBasicImage = new ImageIcon(Main.class.getResource("images/startButtonBasic.png"));
+	private ImageIcon quitButtonEnteredImage = new ImageIcon(Main.class.getResource("images/quitButtonEntered.png"));
+	private ImageIcon quitButtonBasicImage = new ImageIcon(Main.class.getResource("images/quitButtonBasic.png"));
 
-	private ImageIcon leftButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/leftButtonEntered.png"));
-	private ImageIcon leftButtonBasicImage = new ImageIcon(Main.class.getResource("/images/leftButtonBasic.png"));
-	private ImageIcon rightButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/rightButtonEntered.png"));
-	private ImageIcon rightButtonBasicImage = new ImageIcon(Main.class.getResource("/images/rightButtonBasic.png"));
+	private ImageIcon leftButtonEnteredImage = new ImageIcon(Main.class.getResource("images/leftButtonEntered.png"));
+	private ImageIcon leftButtonBasicImage = new ImageIcon(Main.class.getResource("images/leftButtonBasic.png"));
+	private ImageIcon rightButtonEnteredImage = new ImageIcon(Main.class.getResource("images/rightButtonEntered.png"));
+	private ImageIcon rightButtonBasicImage = new ImageIcon(Main.class.getResource("images/rightButtonBasic.png"));
 
-	private ImageIcon easyButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/easyButtonEntered.png"));
-	private ImageIcon easyButtonBasicImage = new ImageIcon(Main.class.getResource("/images/easyButtonBasic.png"));
-	private ImageIcon hardButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/hardButtonEntered.png"));
-	private ImageIcon hardButtonBasicImage = new ImageIcon(Main.class.getResource("/images/hardButtonBasic.png"));
+	private ImageIcon easyButtonEnteredImage = new ImageIcon(Main.class.getResource("images/easyButtonEntered.png"));
+	private ImageIcon easyButtonBasicImage = new ImageIcon(Main.class.getResource("images/easyButtonBasic.png"));
+	private ImageIcon hardButtonEnteredImage = new ImageIcon(Main.class.getResource("images/hardButtonEntered.png"));
+	private ImageIcon hardButtonBasicImage = new ImageIcon(Main.class.getResource("images/hardButtonBasic.png"));
 
-	private ImageIcon backButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/backButtonEntered.png"));
-	private ImageIcon backButtonBasicImage = new ImageIcon(Main.class.getResource("/images/backButtonBasic.png"));
+	private ImageIcon backButtonEnteredImage = new ImageIcon(Main.class.getResource("images/backButtonEntered.png"));
+	private ImageIcon backButtonBasicImage = new ImageIcon(Main.class.getResource("images/backButtonBasic.png"));
 
-	private JLabel menuBar = new JLabel(new ImageIcon(Main.class.getResource("/images/menuBar.png")));
+	private JLabel menuBar = new JLabel(new ImageIcon(Main.class.getResource("images/menuBar.png")));
 
 	private JButton exitButton = new JButton(exitButtonBasicImage);
 	private JButton startButton = new JButton(startButtonBasicImage);
@@ -389,9 +389,9 @@ public class DynamicBeat extends JFrame {
 	public void selectTrack(int nowSelected) {
 		if (selectedMusic != null)
 			selectedMusic.close();
-		titleImage = new ImageIcon(Main.class.getResource("/images/" + trackList.get(nowSelected).getTitleImage()))
+		titleImage = new ImageIcon(Main.class.getResource("images/" + trackList.get(nowSelected).getTitleImage()))
 				.getImage();
-		selectedImage = new ImageIcon(Main.class.getResource("/images/" + trackList.get(nowSelected).getStartImage()))
+		selectedImage = new ImageIcon(Main.class.getResource("images/" + trackList.get(nowSelected).getStartImage()))
 				.getImage();
 		selectedMusic = new Music(trackList.get(nowSelected).getStartMusic(), true);
 		selectedMusic.start();
@@ -421,7 +421,7 @@ public class DynamicBeat extends JFrame {
 		rightButton.setVisible(false);
 		easyButton.setVisible(false);
 		hardButton.setVisible(false);
-		Background = new ImageIcon(Main.class.getResource("/images/" + trackList.get(nowSelected).getGameImage()))
+		Background = new ImageIcon(Main.class.getResource("images/" + trackList.get(nowSelected).getGameImage()))
 				.getImage();
 		backButton.setVisible(true);
 		isGameScreen = true;
@@ -438,7 +438,7 @@ public class DynamicBeat extends JFrame {
 		rightButton.setVisible(true);
 		easyButton.setVisible(true);
 		hardButton.setVisible(true);
-		Background = new ImageIcon(Main.class.getResource("/images/mainBackground.jpg")).getImage();
+		Background = new ImageIcon(Main.class.getResource("images/mainBackground.jpg")).getImage();
 		backButton.setVisible(false);
 		selectTrack(nowSelected);
 		isGameScreen = false;
@@ -449,7 +449,7 @@ public class DynamicBeat extends JFrame {
 	public void enterMain() {
 		startButton.setVisible(false);
 		quitButton.setVisible(false);
-		Background = new ImageIcon(Main.class.getResource("/images/mainBackground.jpg")).getImage();
+		Background = new ImageIcon(Main.class.getResource("images/mainBackground.jpg")).getImage();
 		leftButton.setVisible(true);
 		rightButton.setVisible(true);
 		easyButton.setVisible(true);

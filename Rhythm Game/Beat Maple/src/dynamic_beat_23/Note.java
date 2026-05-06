@@ -2,9 +2,10 @@ package dynamic_beat_23;
 
 import java.awt.Graphics2D;
 import java.awt.Image;
+
 import javax.swing.ImageIcon;
 
-import dynamic_beat_15.Main; // 패키지 경로에 맞춰 수정 필요
+
 
 public class Note extends Thread {
 	
@@ -22,7 +23,7 @@ public class Note extends Thread {
 	
 	public static final int JUDGEMENT_LINE_Y = 960; 
 
-	private Image noteBasicImage = new ImageIcon(Main.class.getResource("/images/noteBasic.png")).getImage();
+	private Image noteBasicImage = new ImageIcon(Main.class.getResource("images/noteBasic.png")).getImage();
 	private int x, y; 
 	private String noteType;
 	private boolean proceeded = true;

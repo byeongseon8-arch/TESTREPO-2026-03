@@ -1,3 +1,5 @@
-2026/05/05-23:34:42.000 2fc Reusing MANIFEST C:\Users\gkgk8\OneDrive\Desktop\Rhythm Game\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
-2026/05/05-23:34:42.005 2fc Recovering log #3
-2026/05/05-23:34:42.005 2fc Reusing old log C:\Users\gkgk8\OneDrive\Desktop\Rhythm Game\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000003.log 
+2026/05/06-17:11:05.988 7480 Log #3: 19 ops saved to Table #4 OK
+2026/05/06-17:11:06.004 7480 Archiving C:\Users\Administrator\Downloads\TMP\TESTREPO-2026-03\Rhythm Game\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000003.log: OK
+2026/05/06-17:11:06.004 7480 Table #4: 19 entries OK
+2026/05/06-17:11:06.007 7480 Archiving C:\Users\Administrator\Downloads\TMP\TESTREPO-2026-03\Rhythm Game\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
+2026/05/06-17:11:06.019 7480 **** Repaired leveldb C:\Users\Administrator\Downloads\TMP\TESTREPO-2026-03\Rhythm Game\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database; recovered 1 files; 383 bytes. Some data may have been lost. ****
