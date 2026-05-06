@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+D:\OneDrive\Desktop\Rhythm Game\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-365586912.index
-3148893659.index
-3767931335.index

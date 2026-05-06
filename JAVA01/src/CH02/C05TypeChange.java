@@ -10,7 +10,7 @@ public class C05TypeChange {
 		double dnum3 = num1 / num2;
 		System.out.println("dnum1 : " + dnum1);
 		System.out.println("dnum2 : " + dnum2);
-		System.out.println("dnum3 : " + dnum);
+		System.out.println("dnum3 : " + dnum3);
 	}
 
 }
