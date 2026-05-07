@@ -7,5 +7,11 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/mysql-connector-j-9.7.0/mysql-connector-j-9.7.0/mysql-connector-j-9.7.0.jar"/>
+	<classpathentry kind="lib" path="src/Ch06/jsoup-1.22.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/selenium-server-4.43.0.jar"/>
+	<classpathentry kind="lib" path="src/Ch06/jackson-annotations-2.21.jar"/>
+	<classpathentry kind="lib" path="src/Ch06/jackson-core-2.21.3.jar"/>
+	<classpathentry kind="lib" path="src/Ch06/jackson-databind-2.21.3.jar"/>
+	<classpathentry kind="lib" path="src/Ch06/jackson-datatype-jsr310-2.21.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
