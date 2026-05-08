@@ -54,6 +54,11 @@ class Audience{
 	public String toString() {
 		return "Audience [myMoney=" + myMoney + ", ticketCnt=" + ticketCnt + "]";
 	}
+
+	public void issue(TicketSeller 매표원, int i) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 

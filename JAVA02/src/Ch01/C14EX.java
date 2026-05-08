@@ -91,22 +91,7 @@ class CafeOwner{
 		return "CafeOwner [myMoney=" + myMoney + ", coffeeCnt=" + coffeeCnt + ", price=" + price + "]";
 	}
 	
-	
-	
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
 
 public class C14EX {
 

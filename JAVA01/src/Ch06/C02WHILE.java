@@ -323,14 +323,12 @@ public class C02WHILE {
 //			//별
 //			int k=0;
 //			while(k<=i*2) {
-//				System.out.print("*");
+//				System.out.print("*");           <<<<<<<<<<<<<<<<<<<<<<<<여기
 //				k++;
 //			}
 //			System.out.println();
 //			i++;
 //			
-//		}
-		
 		// ?????????????????????????????????????
 		// 높이  : h		, ~는 범위
 		//		i(행)		j(공백)				k(별)
@@ -349,23 +347,23 @@ public class C02WHILE {
 //		int h = sc.nextInt();
 //		int i=0;
 //		while(i<h) {	
-//			//공백
+//			
 //			int j=0;
 //			while(j<(h-1)-i) {
 //				System.out.print(" ");
 //				j++;
 //			}
-//			//별
+//			
 //			int k=0;
 //			while(k<=i*2) {
-//				System.out.print("*");
+//				System.out.print("*");  
 //				k++;
 //			}		
 //			System.out.println();
 //			i++;
 //		}
-//		sc.close();
-		
+//		sc.close();					//<<<<<<<<<<<<<<<<<<<<<<<<<<
+	
 		
 		//7)
 		//높이 : 4
@@ -374,7 +372,7 @@ public class C02WHILE {
 		//  ***
 		//   *
 		
-
+		
 		
 		//=================================================
 		// 높이  : 4	
@@ -388,7 +386,7 @@ public class C02WHILE {
 		//		i++			j++			k++
 		//		i<4			j<=i-1		k<7-(i*2)	or k<=6-2*i	
 		//==============================================
-	
+		
 		
 		
 //		int i=0;
@@ -446,7 +444,7 @@ public class C02WHILE {
 		
 		
 		
-	
+		
 		
 		//===========================================
 		//8) 고정높이
@@ -534,7 +532,7 @@ public class C02WHILE {
 		//  ***
 		//   *	
 		//============================================
-		// 고정 높이
+		// 높이
 		//		i(행)		j(공백)		k(별)
 		//		0			0~2			0~0
 		//		1			0~1			0~2
@@ -554,58 +552,42 @@ public class C02WHILE {
 		//					j<=i-h/2+1	k<((h-1)*2)-i*2		
 		
 		//===========================================
-//		Scanner sc = new Scanner(System.in);
-//		int h = sc.nextInt();
+		Scanner sc = new Scanner(System.in);   
+	      int h =sc.nextInt();
+	      int i = 0;
+	      while(h%2==0 || h<=1) {
+	         System.out.println("재입력(홀수) : ");
+	         h=sc.nextInt();
+	      }
+	      while(i<h) {
+	         int j =0;
+	         int k =0;
+	         if(i<h/2+1) {
+	            while(j<h/2-i) {
+	               System.out.print(" ");
+	               j++;
+	            }
+	            while(k<=2*i) {
+	               System.out.print("*");
+	               k++;               
+	            }
+	         }
+	         else {
+	            while(j<i-h/2) {
+	               System.out.print(" ");
+	               j++;
+	            }
+	            while(k<=2*(h-i-1)) {
+	               System.out.print("*");
+	               k++;               
+	            }            
+	         }
+	         System.out.println();
+	         i++;
+	      }
+	      sc.close();           				
 //		
-//		while (h%2==0) {
-//			System.out.println("다시 입력(홀수) : ");
-//			h=sc.nextInt();
-//		}
-//		
-//		int i=0;
-//		while(i<7) {
-//			
-//			if(i<=h/2) {
-//				
-//				//공백
-//				int j=0;
-//				while(j<i-h/2) {
-//					System.out.print(" ");
-//					j++;
-//				}
-//				//별
-//				int k=0;
-//				while(k<2*i) {
-//					System.out.print("*");
-//					k++;
-//				}
-//				
-//			}else {
-//		
-//				//공백
-//				int j=0;
-//				while(j<=i-h/2+1) {
-//					System.out.print(" ");
-//					j++;
-//				}
-//				//별
-//				int k=0;
-//				while(k<((h-1)*2)-i*2) {
-//					System.out.print("*");
-//					k++;
-//				}
-//				
-//			}
-//			
-//			
-//			System.out.println();
-//			i++;
-//			
-//		}		
-//		
-//		sc.close();
 		
-	
 		
 		// 10)
 		// 높이 : 7
@@ -616,7 +598,6 @@ public class C02WHILE {
 		//  ***
 		// *****
 		//*******
-		
-	}
+		}
 	
 }
