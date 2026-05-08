@@ -160,12 +160,12 @@ class C12GUI extends JFrame implements ActionListener,KeyListener,MouseListener
 		else if(e.getSource() == btn3)
 		{
 			System.out.println("대화기록보기 버튼 클릭");
+			
 			//파일탐색기 열기
 			JFileChooser fileChooser = new JFileChooser();
 			fileChooser.setDialogTitle("불러올 파일을 선택하세요");
 			fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-			fileChooser.setApproveButtonText("불러오기");
-			
+
 			
 			//
 			File defaultDirPath = new File("C:\\IOTEST");
@@ -181,26 +181,41 @@ class C12GUI extends JFrame implements ActionListener,KeyListener,MouseListener
 				File selectedFile = fileChooser.getSelectedFile();
 				System.out.println("selectedFile : " + selectedFile);
 				
-				Reader in = null;
+				// try - catch - finally
+//				Reader in = null;
+//				StringBuffer buffer = new StringBuffer();
+//				try {
+//					in = new FileReader(selectedFile);
+//					while(true) {
+//						int data = in.read();
+//						if(data==-1)
+//							break;
+//						buffer.append((char)data);
+//					}
+//					area1.setText(buffer.toString());
+//				}catch(Exception e2) {
+//					e2.printStackTrace();
+//				}finally {
+//					try {in.close();} catch (IOException e1) {e1.printStackTrace();}
+//				}
+				
+				// try - resource
+				
+				
 				StringBuffer buffer = new StringBuffer();
-				try {Reader in = new FileReader(selectedFile)){
+				try(Reader in = new FileReader(selectedFile)) {	
 					
 					int data = 0;
 					while((data = in.read())!=-1)
-						buffer.append(char(data);
-						area1.setText(buffer.toString());
-				}
-					
-						
-						
-					}
-					
+						buffer.append((char)data);
+					area1.setText(buffer.toString());
 					
 				}catch(Exception e2) {
 					e2.printStackTrace();
-				}finally {
-					try {in.close();} catch (IOException el) {el.printStackTrace();}
 				}
+				
+				
+				
 			}
 			
 		}

@@ -2,9 +2,9 @@ package Ch07;
 
 
 
-import java.io.FileOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -88,20 +88,41 @@ class Board implements Serializable 	// 직렬화
 
 public class C04ObjectStramMain {
 
-	public static void main(String[] args) throws IOException {
-		Board board1 = new Board(1,"제목1","내용1","작성자1",new Date());
-		Board board2 = new Board(2,"제목2","내용2","작성자2",new Date());
-		Board board3 = new Board(3,"제목3","내용3","작성자3",new Date());
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+//		Board board1 = new Board(1,"제목1","내용1","작성자1",new Date());
+//		Board board2 = new Board(2,"제목2","내용2","작성자2",new Date());
+//		Board board3 = new Board(3,"제목3","내용3","작성자3",new Date());
+//		
+//		FileOutputStream out = new FileOutputStream("C:\\IOTEST\\board.db");
+//		ObjectOutputStream oout = new ObjectOutputStream(out);
+//		oout.writeObject(board1);
+//		oout.writeObject(board2);
+//		oout.writeObject(board3);
+//		oout.flush();
+//		oout.close();
+//		out.close();
 		
-		FileOutputStream out = new FileOutputStream("C:\\IOTEST\\board.db");
-		ObjectOutputStream oout = new ObjectOutputStream(out);
-		oout.writeObject(board1);
-		oout.writeObject(board2);
-		oout.writeObject(board3);
-		oout.flush();
-		oout.close();
-		out.close();
 		
+		FileInputStream in = new FileInputStream("C:\\IOTEST\\board.db");
+		ObjectInputStream oin = new ObjectInputStream(in);
+		
+		Object obj = oin.readObject();
+		Board down = (Board)obj;
+		System.out.println(down);
+		
+		Object obj2 = oin.readObject();
+		Board down2 = (Board)obj2;
+		System.out.println(down2);
+		
+		Object obj3 = oin.readObject();
+		Board down3 = (Board)obj3;
+		System.out.println(down3);
+		
+		// 더이상 읽어올 Object가 없으면  java.io.EOFException 예외 발생(예외 처리 후 RuntimeError 해결)
+		Object obj4 = oin.readObject();		
+		
+		oin.close();
+		in.close();
 	}
 
 }
