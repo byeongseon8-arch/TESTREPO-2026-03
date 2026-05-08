@@ -15,7 +15,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-class C08GUI extends JFrame implements ActionListener, KeyListener, MouseListener
+class C12GUI extends JFrame implements ActionListener, KeyListener, MouseListener
 {
 	JButton btn1;
 	JButton btn2;
@@ -26,7 +26,7 @@ class C08GUI extends JFrame implements ActionListener, KeyListener, MouseListene
 	JTextArea area1;
 	
 	
-	C08GUI(String title) {
+	C12GUI(String title) {
 
 		// Frame Setting
 		super(title);
@@ -91,6 +91,7 @@ class C08GUI extends JFrame implements ActionListener, KeyListener, MouseListene
 		if(e.getSource() == btn1) 
 		{
 			System.out.println("파일로 저장 버튼 클릭");
+			
 		}
 		else if(e.getSource() == btn2)
 		{
@@ -192,6 +193,6 @@ class C08GUI extends JFrame implements ActionListener, KeyListener, MouseListene
 
 public class C08SwingEventMain {
 	public static void main(String[] args) {
-		new C08GUI("Chatting");
+		new C12GUI("Chatting");
 	}
 }
