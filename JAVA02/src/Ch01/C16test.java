@@ -33,6 +33,7 @@ public class C16test {
 //		}
 //		sc.close();	
 // ----------------------------------------------------
+		// 2번 문제 다이아몬드 별찍기
 		Scanner sc = new Scanner(System.in);   
 	      int h =sc.nextInt();
 	      
