@@ -1,4 +1,4 @@
-package Ch09;
+package Ch11;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -10,7 +10,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class C02Client {
+public class ClientMain {
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		//
