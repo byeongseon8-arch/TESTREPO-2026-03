@@ -1,10 +1,6 @@
 package memo;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -63,14 +59,8 @@ public class MemoDAO {
      *    setString 으로 2개 파라미터 바인딩 → executeUpdate() 반환.</p>
      */
     public int insert(Memo memo) throws SQLException {
-//        // TODO: PreparedStatement 로 SQL_INSERT 실행
-//        throw new UnsupportedOperationException("MemoDAO.insert() — TODO: 구현하세요.");
-    	try(Connection conn = DBManager.getConnection();PreparedStatement pstmt = conn.prepareStatement(SQL_INSERT);) 
-    	{
-	    	pstmt.setString(1,memo.getTitle());
-	    	pstmt.setString(2, memo.getContent());
-	    	return pstmt.executeUpdate();
-    	}
+        // TODO: PreparedStatement 로 SQL_INSERT 실행
+        throw new UnsupportedOperationException("MemoDAO.insert() — TODO: 구현하세요.");
     }
 
     /**
@@ -81,26 +71,7 @@ public class MemoDAO {
      */
     public List<Memo> selectAll() throws SQLException {
         // TODO: PreparedStatement 로 SQL_SELECT_ALL 실행 → ResultSet 순회 → Memo List 반환
-    	try
-    	(
-    			Connection conn = DBManager.getConnection();
-    			PreparedStatement pstmt = conn.prepareStatement(SQL_SELECT_ALL);
-    			ResultSet rs = pstmt.executeQuery();
-    	) 
-    	{
-	    	List<Memo> list = new ArrayList<>();
-    		Memo dto = null;
-    		while(rs.next()) {
-				Memo m = new Memo();
-				m.setMemoId(rs.getInt("memo_id"));
-				m.setTitle(rs.getString("title"));
-				m.setContent(rs.getString("content"));
-				m.setCreatedAt(rs.getTimestamp("created_at"));
-				list.add(m);	
-    		}
-    	 	
-	    	return list;
-    	}
+        throw new UnsupportedOperationException("MemoDAO.selectAll() — TODO: 구현하세요.");
     }
 
     /**
@@ -110,13 +81,7 @@ public class MemoDAO {
      */
     public int update(Memo memo) throws SQLException {
         // TODO: PreparedStatement 로 SQL_UPDATE 실행
-    	try(Connection conn = DBManager.getConnection();PreparedStatement pstmt = conn.prepareStatement(SQL_UPDATE);) 
-    	{
-	    	pstmt.setString(1,memo.getTitle());
-	    	pstmt.setString(2, memo.getContent());
-	    	pstmt.setInt(3, memo.getMemoId());
-	    	return pstmt.executeUpdate();
-    	}
+        throw new UnsupportedOperationException("MemoDAO.update() — TODO: 구현하세요.");
     }
 
     /**
@@ -126,10 +91,6 @@ public class MemoDAO {
      */
     public int delete(int memoId) throws SQLException {
         // TODO: PreparedStatement 로 SQL_DELETE 실행
-    	try(Connection conn = DBManager.getConnection();PreparedStatement pstmt = conn.prepareStatement(SQL_DELETE);) 
-    	{
-	    	pstmt.setInt(1,memoId);
-	    	return pstmt.executeUpdate();
-    	}
+        throw new UnsupportedOperationException("MemoDAO.delete() — TODO: 구현하세요.");
     }
 }

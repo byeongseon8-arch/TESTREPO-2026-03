@@ -30,61 +30,29 @@ import java.sql.Timestamp;
 public class Memo {
 
     // TODO: private 필드 4개 선언
-	int memoId;		
-	String title;		
-	String content;		
-	Timestamp createdAt;
 
     public Memo() {}
 
     public Memo(Integer memoId, String title, String content, Timestamp createdAt) {
         // TODO: 4개 필드 초기화
-    	this.memoId = memoId;
-    	this.title = title;
-    	this.content = content;
-    	this.createdAt = createdAt;
-    	
     }
 
     // ====== getter / setter — 학생 TODO ======
 
-	public int getMemoId() {
-		return memoId;
-	}
+    public Integer   getMemoId()                  { return null; /* TODO */ }
+    public void      setMemoId(Integer v)         { /* TODO */ }
 
-	public void setMemoId(int memoId) {
-		this.memoId = memoId;
-	}
+    public String    getTitle()                   { return null; /* TODO */ }
+    public void      setTitle(String v)           { /* TODO */ }
 
-	public String getTitle() {
-		return title;
-	}
+    public String    getContent()                 { return null; /* TODO */ }
+    public void      setContent(String v)         { /* TODO */ }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public Timestamp getCreatedAt()               { return null; /* TODO */ }
+    public void      setCreatedAt(Timestamp v)    { /* TODO */ }
 
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public Timestamp getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Timestamp createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	@Override
-	public String toString() {
-		return "Memo [memoId=" + memoId + ", title=" + title + ", content=" + content + ", createdAt=" + createdAt
-				+ "]";
-	}
-	
-	
+    @Override
+    public String toString() {
+        return "Memo{TODO: 모든 필드 표시}";
+    }
 }

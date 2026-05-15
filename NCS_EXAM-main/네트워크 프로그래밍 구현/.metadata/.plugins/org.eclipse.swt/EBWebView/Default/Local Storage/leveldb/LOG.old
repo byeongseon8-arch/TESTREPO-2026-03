@@ -1,3 +1,2 @@
-2026/05/15-09:11:21.235 31a4 Reusing MANIFEST C:\Users\Administrator\Desktop\NCS_EXAM-main\네트워크 프로그래밍 구현\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2026/05/15-09:11:21.242 31a4 Recovering log #3
-2026/05/15-09:11:21.244 31a4 Reusing old log C:\Users\Administrator\Desktop\NCS_EXAM-main\네트워크 프로그래밍 구현\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2026/05/15-12:25:01.608 d10 Creating DB C:\Users\Administrator\Desktop\네트워크 프로그래밍 구현\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2026/05/15-12:25:01.632 d10 Reusing MANIFEST C:\Users\Administrator\Desktop\네트워크 프로그래밍 구현\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
